@@ -26,7 +26,6 @@ body {
 
 .note-textarea {
   resize: none;
-  height: calc(100% - 63px);
   padding-top: 15px;
 }
 
@@ -42,7 +41,6 @@ body {
 }
 
 .list-container .card {
-  height: calc(100vh - 70px);
   border-bottom: none;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -77,10 +75,28 @@ body {
   cursor: pointer;
 }
 
+.btn1 {
+  background-color: #757575;
+  border-radius: none;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn1:hover {
+  background-color: #dbdada;
+  border-radius: none;
+  text-decoration: none;
+  color: black;
+}
+
 /* -------------------------------- NAVBAR -------------------------------- */
 
 .navbar {
-  background-color: #363636b6 !important;
+  background-color: #363636a6 !important;
+  border-radius: 10px 10px 0px 0px;
+  height: 10vh;
 }
 
 .list-group-item:hover {
@@ -89,4 +105,67 @@ body {
 
 .delete-note:hover {
   color: rgb(153, 153, 153) !important;
+}
+
+/* -------------------------------- HOME -------------------------------- */
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('https://cdn.pixabay.com/photo/2022/10/11/21/58/texture-7515225_1280.jpg');
+  background-size: cover;
+}
+
+.main-hold {
+  margin: 2vh 4vw 2vh 4vw;
+  height: 80vh;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.note-list {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.note-text {
+  padding: 0px 15px 0px 15px;
+}
+
+.note-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.list-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid {
+  height: calc(100% - 10vh);
+  padding: 0;
+  margin: 0;
+  border: solid 1px #757575;
+  border-radius: 0px 0px 10px 10px;
+  background-color: white;
+}
+
+.list-group {
+  height: 100%;
+  border-right: solid 1px #757575;
+}
+
+.note-title {
+  padding: 30px 0px 30px 0px;
 }
