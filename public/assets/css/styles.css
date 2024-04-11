@@ -76,3 +76,17 @@ body {
   padding: 20px;
   cursor: pointer;
 }
+
+/* -------------------------------- NAVBAR -------------------------------- */
+
+.navbar {
+  background-color: #363636b6 !important;
+}
+
+.list-group-item:hover {
+  background-color: #42414139;
+}
+
+.delete-note:hover {
+  color: rgb(153, 153, 153) !important;
+}
